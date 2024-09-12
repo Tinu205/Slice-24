@@ -1,0 +1,269 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slice'24</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link href="./vendors/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="./css/skin.css" rel="stylesheet" />
+    <link href="./css/notPC.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/img_style.css">
+  </head>
+
+  <body id="bdy">
+    <video autoplay muted loop id="myVideo" style="opacity: 0.3">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Hero div -->
+    <div id="herodiv" class="vhcontainer myFlex centerFlex">
+      <div id="herotext">
+          <img src="./img/slice_logo.png" class="slice_logo">
+        <h3 class="revo">Hello</h3>
+        <button
+          id="registerHeroButton"
+          class="btn-large myGradientRotationAnimation"
+          onclick="openInNewTab('https://forms.gle/9j9dQiCyrSpwzpMA6')"
+        >
+          Register Now
+        </button>
+        <div class="myFlex" id="socialMediaSection">
+          <i
+            onclick="openInNewTab('https://instagram.com/thailex_23.vit?igshid=ZDdkNTZiNTM=', '_blank').focus();"
+            class="socialMediaIcons bi bi-instagram gradient1"
+          ></i>
+          <i
+            onclick="openInNewTab('https://goo.gl/maps/WeneSpcAcZXhY3zH7', '_blank').focus();"
+            class="socialMediaIcons bi bi-geo-alt-fill gradient1"
+          ></i>
+          <a
+            onclick="openInNewTab('./transport.pdf')"
+            class="socialMediaIcons bx bx-bus gradient1"
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About div -->
+    <div
+      id="aboutdiv"
+      class="vhcontainer myFlex centerFlex"
+      style="height: 70vh"
+    >
+      <div class="column2flex">
+        <img
+          src="./img/brouch.png"
+          class="columnImage"
+          onclick="window.open('./img/brouch.png', '_blank').focus();"
+        />
+        <div class="myFlex centerFlex columnText">
+          <p>
+            Really excited to announce that we, the Department of
+            <span class="gradient0 extraBold1">
+              Electronics and communication</span
+            >
+            are coming together all set to emphasize the hidden talents of the
+            disciples. Get ready folks as the symposium
+            <span class="gradient0 extraBold">SLICE'24</span> is down the
+            lane falling on
+            <span class="gradient0 extraBold1">12-08-2024(Saturday).</span>
+            Excited to make a memorable day for you!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="myHeader extraBold gradient0">Registration Ends In</h2>
+    <div class="time-container">
+      <div class="time">
+        <p>Days</p>
+        <span id="days" class="gradient0 extraBold">00</span>
+      </div>
+      <div class="time">
+        <p>Hours</p>
+        <span id="hours" class="gradient0 extraBold">00</span>
+      </div>
+      <div class="time">
+        <p>Minutes</p>
+        <span id="minutes" class="gradient0 extraBold">00</span>
+      </div>
+      <div class="time">
+        <p>Seconds</p>
+        <span id="seconds" class="gradient0 extraBold">00</span>
+      </div>
+    </div>
+
+    <!-- Event List -->
+    <h2 class="myHeader extraBold gradient0">Events</h2>
+    <div id="eventdiv" class="triangle">
+      <div class="myFlex centerFlex columnText">
+        <h4 onclick="'./page.html'" style='text-align: center;'>Circuit quest</h4><br><br/>
+        <ul class="columnList">
+          <li onclick="openInNewTab('./page1.html')">
+            <h4>Tech Bingo</h4>
+          </li>
+          <li onclick="openInNewTab('./page2.html')">
+            <h4>Circuit Auction</h4>
+          </li>
+          <li onclick="openInNewTab('./page3.html')">
+            <h4>Boolean Battle</h4>
+          </li>
+          <li onclick="openInNewTab('./page4.html')">
+            <h4>Cipher zone</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="myFlex centerFlex columnText">
+        <ul class="columnList">
+          <!-- <span class="gradient0 extraBold">Non-Technical</span> -->
+          <li onclick="openInNewTab('./page5.html')">
+            <h4>Deal or Di Core</h4>
+          </li>
+          <li onclick="openInNewTab('./page6.html')">
+            <h4>Codeathon</h4>
+          </li>
+          <li onclick="openInNewTab('./page7.html')">
+            <h4>Bits and Ambits</h4>
+          </li>
+          <li onclick="openInNewTab('./page8.html')">
+            <h4>Paper presentation</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h2 class="myHeader extraBold gradient0">General Guidelines</h2>
+    <div
+      class="generalDiv"
+      style="
+        width: max-content;
+        max-width: 90%;
+        margin: auto;
+        position: relative;
+        z-index: 10001;
+      "
+    >
+      1. All events of SLICE'24 are conducted only through online mode.<br /><br />
+      2. Online portal for registration will be closed on (28.09.2024).<br /><br />
+      3. Students must carry their college ID card and a copy of the mail received during
+      registration.<br /><br />
+      4. All the events will commence at the scheduled time. Participants are requested to be
+      punctual.<br /><br />
+      5. Participants are requested to collect the event tags from the registration desk present at
+      the 1st floor.<br /><br />
+      7. The jury decision will be final in all matters.<br /><br />
+      8. Dress code should be Formal wear.<br /><br />
+      9. Exciting Prizes will be given to winners and Participation certificates will be provided for all.<br /><br />
+      10. Students should refrain from abusive language, obscene display and a good decorum
+      will be appreciated.<br /><br />
+      11. Smoking and consumption of alcohols and any such substance is strictly prohibited
+      inside the college premises.<br /><br />
+    </div>
+    <br /><br />
+
+    <!-- Co ordinator List -->
+    <h2 class="myHeader extraBold gradient0">Contacts</h2>
+    <h5 class="myHeader extraBold1 gradient0">Staff Co-ordinators</h5>
+    <div class="staffcord">
+      <h5 class="extrabold1">xxxxx xxxxx</h5>
+      <h6>+91 xxxxx xxxxx</h6>
+    </div>
+    <br>
+      <br />
+      <h5 class="myHeader extrabold1 gradient0">Student Co-ordinators</h5>
+    <div class="triangle">
+      <div>
+        <h5 class="extrabold1">xxxxx xxxxx</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">President</h6> -->
+        <h6>+91 xxxxx xxxxx</h6>
+      </div>
+      <div>
+        <h5 class="extrabold1">xxxxx xxxxx</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">Vice President</h6> -->
+        <h6>+91 xxxxx xxxxx</h6>
+      </div>
+    </div>
+    <div class="triangle" style="display: block">
+      <h5 class="extrabold1">xxxxx xxxxx</h5>
+      <!-- <h6 class="myHeader extrabold1 gradient0">Event Manager</h6> -->
+      <h6>+91 xxxxx xxxxx</h6>
+    </div>
+    <br />
+    <div class="triangle">
+      <div>
+        <h5 class="extrabold1">xxxxx xxxxx</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">President</h6> -->
+        <h6>+91 xxxxx xxxxx</h6>
+      </div>
+      <div>
+        <h5 class="extrabold1">xxxxx xxxxx</h5>
+        <!-- <h6 class="myHeader extrabold1 gradient0">Vice President</h6> -->
+        <h6>+91 xxxxx xxxxx</h6>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="myfooter">
+      <span
+        class="footer"
+        style="
+          display: block;
+          color: white;
+          margin: auto;
+          font-weight: 600;
+          width: max-content;
+          max-width: 90%;
+        "
+        >Sponsored by</span
+      ><br /><br />
+      <img
+        src="./img/.png"
+        style="display: block; width: max-content; max-width: 90%; margin: auto"
+      />
+      <br />
+    </div>
+    <script type="text/javascript">
+      function countDown() {
+        const now = new Date();
+        const targetTime = new Date("September 28, 2024, 00:00:00");
+
+        const diff = targetTime - now;
+
+        const d = Math.floor(diff / (24 * 60 * 60 * 1000));
+        const h = Math.floor(diff / (60 * 60 * 1000)) % 24;
+        const m = Math.floor(diff / (60 * 1000)) % 60;
+        const s = Math.floor(diff / 1000) % 60;
+
+        document.getElementById("days").innerHTML = d;
+        document.getElementById("hours").innerHTML = ("0" + h).slice(-2);
+        document.getElementById("minutes").innerHTML = ("0" + m).slice(-2);
+        document.getElementById("seconds").innerHTML = ("0" + s).slice(-2);
+      }
+
+      setInterval(countDown, 1000);
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/auto.js"></script>
+  </body>
+</html>
