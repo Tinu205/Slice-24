@@ -1,0 +1,59 @@
+
+.slice_logo  {
+	max-width: 50%;
+	border-radius: 10px; /* Optional: Adds rounded corners */
+	animation: float 2s infinite alternate;
+}
+.staffcord {
+  font-weight: strong;
+  text-align: center;
+  color:white;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to start position */
+  }
+}
+#eventdiv {
+  padding: 20px;
+  display: flex;              /* Enable flexbox on the container */
+  justify-content: center;   /* Center items horizontally within the container */
+}
+
+.myFlex {
+  display: flex;              /* Enable flexbox on the inner container */
+  justify-content: center;   /* Center items horizontally within this container */
+  width: 100%;                /* Ensure it takes the full width of the parent */
+}
+
+.rowList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  width: 100%;                /* Ensure the list takes the full width of the parent */
+  max-width: 1200px;          /* Optional: Limit the maximum width to prevent it from being too wide */
+}
+
+.rowList li {
+  flex: 1 1 calc(33.333% - 20px); /* Adjusts the width to fit three items per row */
+  margin: 10px;
+  box-sizing: border-box; /* Ensures padding and borders are included in the width calculation */
+  text-align: center; /* Centers the text inside the list items */
+}
+
+.rowList h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+.triangle {
+  /* Any additional styles for the triangle class if needed */
+}
