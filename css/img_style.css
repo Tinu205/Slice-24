@@ -1,6 +1,6 @@
 
 .slice_logo  {
-	max-width: 50%;
+	max-width: 90%;
 	border-radius: 10px; /* Optional: Adds rounded corners */
 	animation: float 2s infinite alternate;
 }
@@ -56,4 +56,19 @@
 
 .triangle {
   /* Any additional styles for the triangle class if needed */
+}
+.about_college{
+  height: 100vh;
+  padding-left: 20px;
+  color:#fff;
+  font-weight: strong;
+}
+.about_department{
+  height: 100vh;
+  padding-left: 20px;
+  color:#fff;
+  font-weight: strong;
+}
+.about_department img{
+  padding-left: 50px;
 }
