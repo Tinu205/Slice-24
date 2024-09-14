@@ -79,13 +79,76 @@
         
     }
 }
-
-@media (max-width: 575.98px) {
+.slice_logo  {
+    max-width: 60%;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    animation: float 2s infinite alternate;
+}
+.staffcord {
+  font-weight: strong;
+  text-align: center;
+  color:white;
+}
+@media (max-width: 690px) {
   .home .row {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /* Stack items in reverse order */
   }
-  #hide_logo img {
+
+  #hide_logo {
     display: none !important; /* Forcefully hide the image */
   }
 
+  .about_college {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 0; /* Remove padding if needed */
+    margin: 0; /* Remove margin if needed */
+    text-align: left; /* Align text to the left */
+    width: 100%; 
+  }
+
+  .about_college .row {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    width: 100%; /* Ensure the row takes full width */
+    margin: 0; /* Remove margin if needed */
+  }
+
+  .about_college .col {
+    width: 100%; /* Make sure columns take full width */
+    margin: 0; /* Remove margin if needed */
+  }
+
+  .college_cont {
+    margin-left: 0; /* Remove any extra margin on the left if needed */
+  }
+
+  .about_department {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 0; /* Remove padding if needed */
+    margin: 0; /* Remove margin if needed */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure full width */
+  }
+
+  .about_department .row {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    width: 100%; /* Ensure the row takes full width */
+    margin: 0; /* Remove margin if needed */
+  }
+
+  .about_department .col {
+    width: 100%; /* Make sure columns take full width */
+    margin: 0; /* Remove margin if needed */
+  }
+
+  .about_department .college_cont {
+    margin-left: 0; /* Remove any extra margin on the left if needed */
+  }
 }
