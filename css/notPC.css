@@ -80,8 +80,12 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575.98px) {
   .home .row {
     flex-direction: column-reverse;
   }
+  #hide_logo img {
+    display: none !important; /* Forcefully hide the image */
+  }
+
 }

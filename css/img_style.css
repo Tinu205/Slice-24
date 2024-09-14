@@ -1,6 +1,6 @@
 
 .slice_logo  {
-	max-width: 90%;
+	max-width: 60%;
 	border-radius: 10px; /* Optional: Adds rounded corners */
 	animation: float 2s infinite alternate;
 }
