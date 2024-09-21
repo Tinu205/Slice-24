@@ -64,9 +64,9 @@
           <button id="registerHeroButton" class="btn-large myGradientRotationAnimation" onclick="openInNewTab('https://forms.gle/ayebpMSRnZpLzuYV9')">
             Register Now
           </button>
-<!--           <div class="view_counter" style="text-align: center; font-size: 1.25em; margin-top: 20px;">
+          <div class="view_counter" style="text-align: center; font-size: 1.25em; margin-top: 20px;">
             <span style="font-size: 1em;">Total Website Views : <span class="gradient0" id="viewCount">0</span></span>
-          </div> -->
+          </div> 
       </div>
       <div class="col">
         <img src="./img/slice_logo.png" class="slice_logo">
@@ -248,23 +248,18 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/auto.js"></script>
-    <script type="text/javascript">
-      function updateViewCount() {
-                // Get the view count from localStorage, or initialize it to 0 if not set
-                let viewCount = localStorage.getItem('viewCount') ? parseInt(localStorage.getItem('viewCount')) : 0;
+    <script>
+        // Fetch the view count from CountAPI
+        async function updateViewCount() {
+            const response = await fetch('https://api.countapi.xyz/hit/slice2024.in/viewCount');
+            const data = await response.json();
+            document.getElementById('viewCount').textContent = data.value;
+        }
 
-                // Increment the view count
-                viewCount++;
-
-                // Save the updated view count back to localStorage
-                localStorage.setItem('viewCount', viewCount);
-
-                // Update the displayed count
-                document.getElementById('viewCount').textContent = viewCount;
-            }
-
-            // Call the function to update and display the view count
-            updateViewCount();
+        // Call the function to update and display the view count
+        updateViewCount();
     </script>
   </body>
-</html>
+
+
+
