@@ -65,7 +65,7 @@
             Register Now
           </button>
           <div class="view_counter" style="text-align: center; font-size: 1.25em; margin-top: 20px;">
-            <span style="font-size: 1em;">Total Website Views : <span class="gradient0" id="viewCount">0</span></span>
+            <span style="font-size: 1em;">Total Website Views : <span class="gradient0" id="visits">0</span></span>
           </div> 
       </div>
       <div class="col">
@@ -249,16 +249,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/auto.js"></script>
     <script>
-        // Fetch the view count from CountAPI
-        async function updateViewCount() {
-            const response = await fetch('https://api.countapi.xyz/hit/slice2024.in/viewCount');
-            const data = await response.json();
-            document.getElementById('viewCount').textContent = data.value;
-        }
+    function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+    }
+</script>
 
-        // Call the function to update and display the view count
-        updateViewCount();
-    </script>
+<script async src="https://api.countapi.xyz/hit/slice2024.in/visits?callback=cb"></script>
   </body>
 
 
