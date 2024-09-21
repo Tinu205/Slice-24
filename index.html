@@ -61,13 +61,11 @@
             <span id="seconds" class="gradient0">00</span>
           </div>
         </div>
-        <div>
-          <p>Total visits</p>
-          <!-- Start of CuterCounter Code -->
-          <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hexqdnfq&nd=6&style=88" border="0" alt="hit counter"></a>
-          <!-- End of CuterCounter Code -->
-
+        <div class="view_counter" style="text-align: center; font-size: 1.25em; margin-top: 20px;">
+            Total Website Views:<span class="gradient0" id="viewCount">0</span>
         </div>
+
+
           <button id="registerHeroButton" class="btn-large myGradientRotationAnimation" onclick="openInNewTab('https://forms.gle/ayebpMSRnZpLzuYV9')">
             Register Now
           </button>
@@ -252,5 +250,23 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/auto.js"></script>
+    <script type="text/javascript">
+      function updateViewCount() {
+                // Get the view count from localStorage, or initialize it to 0 if not set
+                let viewCount = localStorage.getItem('viewCount') ? parseInt(localStorage.getItem('viewCount')) : 0;
+
+                // Increment the view count
+                viewCount++;
+
+                // Save the updated view count back to localStorage
+                localStorage.setItem('viewCount', viewCount);
+
+                // Update the displayed count
+                document.getElementById('viewCount').textContent = viewCount;
+            }
+
+            // Call the function to update and display the view count
+            updateViewCount();
+    </script>
   </body>
 </html>
